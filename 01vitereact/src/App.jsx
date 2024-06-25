@@ -1,6 +1,8 @@
 import Chai from "./chai"
 
 function App() {
+  const username = "chai aur code"
+
   return (
     // we can return only one element in jsx
     // <div>
@@ -12,7 +14,7 @@ function App() {
     // fragment
     <>
       <Chai/>  
-      <h1>Chai aur React</h1> 
+      <h1>Chai aur React {username}</h1> 
       <p>test para</p>
     </>
   )
