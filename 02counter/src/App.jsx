@@ -16,11 +16,21 @@ function App() {
     // setCounter(counter)
     // console.log("clicked", counter);
 
+    // increments counter value by only 1
     // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+    // setCounter(counter + 1)
+
+    // prevCounter fetches the previous value of the counter and updates it
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
     
-    if(counter < 20) {
-      setCounter(counter + 1)
-    } 
+    // if(counter < 20) {
+    //   setCounter(counter + 1)
+    // } 
   }
 
   const removeValue = () => {
