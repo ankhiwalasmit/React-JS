@@ -5,28 +5,28 @@ import './App.css'
 
 function App() {
 
+  // it is responsible to change the state(means to propogate changes in the ui and dom)
+  // it returns an array
   let [counter, setCounter] = useState(15)
 
-  // let counter = 15
+  // let counter = 15 // variable is updated but not gets propogated in the ui
 
   const addValue = () => {
     // counter = counter + 1
     // setCounter(counter)
     // console.log("clicked", counter);
+
     // setCounter(counter + 1)
     
-    if(counter + 1 > 20) {
-      return
-    } else {
+    if(counter < 20) {
       setCounter(counter + 1)
-    }
+    } 
   }
 
   const removeValue = () => {
     // setCounter(counter - 1)
-    if(counter - 1 < 0) {
-      return
-    } else {
+
+    if(counter > 0) {
       setCounter(counter - 1)
     }
   }
