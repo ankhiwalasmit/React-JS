@@ -1,5 +1,7 @@
 import React from 'react'
 
+// props is an object that contains all the properties passed to the component
+
 // default value is passed in btnText
 function Card({username, btnText = "visit me"}) {
     // console.log(props.username);
